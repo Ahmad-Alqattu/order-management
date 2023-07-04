@@ -77,6 +77,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers(HttpMethod.GET, "/api/v1/**").permitAll()
+                .antMatchers("/api/v1/products").access("hasRole('ROLE_USER')")
                 .antMatchers("/api/v1/auth/**").permitAll()
                 .antMatchers("/v3/api-docs/**").permitAll()
                 .antMatchers("/v2/api-docs/**").permitAll()
@@ -84,10 +85,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/swagger-resources/**").permitAll()
                 .antMatchers("/swagger-ui.html").permitAll()
                 .antMatchers("/api/v1/orders").permitAll()
-
                 .antMatchers("/webjars/**").permitAll()
-                .anyRequest()
-                .authenticated();
+                .anyRequest().authenticated()
+;
         http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
     }
 
@@ -103,13 +103,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return super.authenticationManagerBean();
     }
 
-//        @Override
-//    @Bean
-//    protected UserDetailsService userDetailsService() {
-//        UserDetails ramesh = User.builder().username("ramesh").password(passwordEncoder()
-//                .encode("password")).roles("USER").build();
-//        UserDetails admin = User.builder().username("admin").password(passwordEncoder()
-//                .encode("admin")).roles("ADMIN").build();
-//        return new InMemoryUserDetailsManager(ramesh, admin);
-//   }
+        @Override
+    @Bean
+    protected UserDetailsService userDetailsService() {
+        UserDetails ramesh = User.builder().username("ramesh").password(passwordEncoder()
+                .encode("password")).roles("USER").build();
+        UserDetails admin = User.builder().username("admin").password(passwordEncoder()
+                .encode("admin")).roles("ADMIN").build();
+        return new InMemoryUserDetailsManager(ramesh, admin);
+   }
 }

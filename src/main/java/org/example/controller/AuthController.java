@@ -74,16 +74,13 @@ public class AuthController {
                     HttpStatus.BAD_REQUEST);
         }
 
-        // add check for email exists in DB
-        if(userRepository.existsByEmail(signUpDto.getUsername())){
-            return new ResponseEntity<>("Email is already taken!", HttpStatus.BAD_REQUEST);
-        }
 
         // create user object
         User user = new User();
-        user.setName(signUpDto.getUsername());
         user.setUsername(signUpDto.getUsername());
-        user.setEmail(signUpDto.getUsername());
+        user.setFirstName(signUpDto.getFirstName());
+        user.setLastName(signUpDto.getLastName());
+        user.setBornAt(signUpDto.getBornAt());
         user.setPassword(passwordEncoder.encode(signUpDto.getPassword()));
         if(signUpDto.isIsadmin()){
             Role roles = roleRepository.findByName("ROLE_ADMIN").get();
