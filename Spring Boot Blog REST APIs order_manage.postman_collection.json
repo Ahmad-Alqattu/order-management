@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "2d60b237-a332-459d-892d-334478263aaf",
-		"name": "Spring Boot Blog REST APIs Copy 2",
+		"_postman_id": "a1fe6d2c-76e7-4c7d-8c80-b44fe83a2c71",
+		"name": "Spring Boot Blog REST APIs Copy 3",
 		"description": "Spring Boot Blog REST API Documentation\n\nContact Support:\n Name: Your name\n Email: name@gmail.com",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "26815431"
@@ -11,13 +11,13 @@
 			"name": "error",
 			"item": [
 				{
-					"name": "error",
+					"name": "errorHtml",
 					"request": {
 						"method": "GET",
 						"header": [
 							{
 								"key": "Accept",
-								"value": "*/*"
+								"value": "text/html"
 							}
 						],
 						"url": {
@@ -38,7 +38,7 @@
 								"header": [
 									{
 										"key": "Accept",
-										"value": "*/*"
+										"value": "text/html"
 									}
 								],
 								"url": {
@@ -57,11 +57,11 @@
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "*/*"
+									"value": "text/html"
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"cupidatat_0\": {}\n}"
+							"body": "{\n  \"empty\": \"<boolean>\",\n  \"model\": {},\n  \"modelMap\": {\n    \"ad_d7\": {}\n  },\n  \"reference\": \"<boolean>\",\n  \"status\": \"NOT_IMPLEMENTED\",\n  \"view\": {\n    \"contentType\": \"<string>\"\n  },\n  \"viewName\": \"<string>\"\n}"
 						},
 						{
 							"name": "Unauthorized",
@@ -132,13 +132,13 @@
 					]
 				},
 				{
-					"name": "error",
+					"name": "errorHtml",
 					"request": {
 						"method": "PUT",
 						"header": [
 							{
 								"key": "Accept",
-								"value": "*/*"
+								"value": "text/html"
 							}
 						],
 						"url": {
@@ -159,7 +159,7 @@
 								"header": [
 									{
 										"key": "Accept",
-										"value": "*/*"
+										"value": "text/html"
 									}
 								],
 								"url": {
@@ -178,11 +178,11 @@
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "*/*"
+									"value": "text/html"
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"cupidatat_0\": {}\n}"
+							"body": "{\n  \"empty\": \"<boolean>\",\n  \"model\": {},\n  \"modelMap\": {\n    \"ad_d7\": {}\n  },\n  \"reference\": \"<boolean>\",\n  \"status\": \"NOT_IMPLEMENTED\",\n  \"view\": {\n    \"contentType\": \"<string>\"\n  },\n  \"viewName\": \"<string>\"\n}"
 						},
 						{
 							"name": "Created",
@@ -275,13 +275,13 @@
 					]
 				},
 				{
-					"name": "error",
+					"name": "errorHtml",
 					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "Accept",
-								"value": "*/*"
+								"value": "text/html"
 							}
 						],
 						"url": {
@@ -302,7 +302,7 @@
 								"header": [
 									{
 										"key": "Accept",
-										"value": "*/*"
+										"value": "text/html"
 									}
 								],
 								"url": {
@@ -321,11 +321,11 @@
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "*/*"
+									"value": "text/html"
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"cupidatat_0\": {}\n}"
+							"body": "{\n  \"empty\": \"<boolean>\",\n  \"model\": {},\n  \"modelMap\": {\n    \"ad_d7\": {}\n  },\n  \"reference\": \"<boolean>\",\n  \"status\": \"NOT_IMPLEMENTED\",\n  \"view\": {\n    \"contentType\": \"<string>\"\n  },\n  \"viewName\": \"<string>\"\n}"
 						},
 						{
 							"name": "Created",
@@ -418,13 +418,13 @@
 					]
 				},
 				{
-					"name": "error",
+					"name": "errorHtml",
 					"request": {
 						"method": "DELETE",
 						"header": [
 							{
 								"key": "Accept",
-								"value": "*/*"
+								"value": "text/html"
 							}
 						],
 						"url": {
@@ -445,7 +445,7 @@
 								"header": [
 									{
 										"key": "Accept",
-										"value": "*/*"
+										"value": "text/html"
 									}
 								],
 								"url": {
@@ -464,11 +464,11 @@
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "*/*"
+									"value": "text/html"
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"cupidatat_0\": {}\n}"
+							"body": "{\n  \"empty\": \"<boolean>\",\n  \"model\": {},\n  \"modelMap\": {\n    \"ad_d7\": {}\n  },\n  \"reference\": \"<boolean>\",\n  \"status\": \"NOT_IMPLEMENTED\",\n  \"view\": {\n    \"contentType\": \"<string>\"\n  },\n  \"viewName\": \"<string>\"\n}"
 						},
 						{
 							"name": "No Content",
@@ -539,13 +539,13 @@
 					]
 				},
 				{
-					"name": "error",
+					"name": "errorHtml",
 					"request": {
 						"method": "OPTIONS",
 						"header": [
 							{
 								"key": "Accept",
-								"value": "*/*"
+								"value": "text/html"
 							}
 						],
 						"url": {
@@ -566,7 +566,7 @@
 								"header": [
 									{
 										"key": "Accept",
-										"value": "*/*"
+										"value": "text/html"
 									}
 								],
 								"url": {
@@ -585,11 +585,11 @@
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "*/*"
+									"value": "text/html"
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"cupidatat_0\": {}\n}"
+							"body": "{\n  \"empty\": \"<boolean>\",\n  \"model\": {},\n  \"modelMap\": {\n    \"ad_d7\": {}\n  },\n  \"reference\": \"<boolean>\",\n  \"status\": \"NOT_IMPLEMENTED\",\n  \"view\": {\n    \"contentType\": \"<string>\"\n  },\n  \"viewName\": \"<string>\"\n}"
 						},
 						{
 							"name": "No Content",
@@ -660,13 +660,13 @@
 					]
 				},
 				{
-					"name": "error",
+					"name": "errorHtml",
 					"request": {
 						"method": "HEAD",
 						"header": [
 							{
 								"key": "Accept",
-								"value": "*/*"
+								"value": "text/html"
 							}
 						],
 						"url": {
@@ -687,7 +687,7 @@
 								"header": [
 									{
 										"key": "Accept",
-										"value": "*/*"
+										"value": "text/html"
 									}
 								],
 								"url": {
@@ -706,11 +706,11 @@
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "*/*"
+									"value": "text/html"
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"cupidatat_0\": {}\n}"
+							"body": "{\n  \"empty\": \"<boolean>\",\n  \"model\": {},\n  \"modelMap\": {\n    \"ad_d7\": {}\n  },\n  \"reference\": \"<boolean>\",\n  \"status\": \"NOT_IMPLEMENTED\",\n  \"view\": {\n    \"contentType\": \"<string>\"\n  },\n  \"viewName\": \"<string>\"\n}"
 						},
 						{
 							"name": "No Content",
@@ -781,13 +781,13 @@
 					]
 				},
 				{
-					"name": "error",
+					"name": "errorHtml",
 					"request": {
 						"method": "PATCH",
 						"header": [
 							{
 								"key": "Accept",
-								"value": "*/*"
+								"value": "text/html"
 							}
 						],
 						"url": {
@@ -808,7 +808,7 @@
 								"header": [
 									{
 										"key": "Accept",
-										"value": "*/*"
+										"value": "text/html"
 									}
 								],
 								"url": {
@@ -827,11 +827,11 @@
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "*/*"
+									"value": "text/html"
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"cupidatat_0\": {}\n}"
+							"body": "{\n  \"empty\": \"<boolean>\",\n  \"model\": {},\n  \"modelMap\": {\n    \"ad_d7\": {}\n  },\n  \"reference\": \"<boolean>\",\n  \"status\": \"NOT_IMPLEMENTED\",\n  \"view\": {\n    \"contentType\": \"<string>\"\n  },\n  \"viewName\": \"<string>\"\n}"
 						},
 						{
 							"name": "No Content",
@@ -902,13 +902,13 @@
 					]
 				},
 				{
-					"name": "error",
+					"name": "errorHtml",
 					"request": {
 						"method": "TRACE",
 						"header": [
 							{
 								"key": "Accept",
-								"value": "*/*"
+								"value": "text/html"
 							}
 						],
 						"url": {
@@ -929,7 +929,7 @@
 								"header": [
 									{
 										"key": "Accept",
-										"value": "*/*"
+										"value": "text/html"
 									}
 								],
 								"url": {
@@ -948,11 +948,11 @@
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "*/*"
+									"value": "text/html"
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"cupidatat_0\": {}\n}"
+							"body": "{\n  \"empty\": \"<boolean>\",\n  \"model\": {},\n  \"modelMap\": {\n    \"ad_d7\": {}\n  },\n  \"reference\": \"<boolean>\",\n  \"status\": \"NOT_IMPLEMENTED\",\n  \"view\": {\n    \"contentType\": \"<string>\"\n  },\n  \"viewName\": \"<string>\"\n}"
 						},
 						{
 							"name": "No Content",
@@ -2770,6 +2770,80 @@
 											"header": [],
 											"cookie": [],
 											"body": ""
+										},
+										{
+											"name": "getAllProducts",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/v1/products",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"v1",
+														"products"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "1; mode=block"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "no-cache, no-store, max-age=0, must-revalidate"
+												},
+												{
+													"key": "Pragma",
+													"value": "no-cache"
+												},
+												{
+													"key": "Expires",
+													"value": "0"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "DENY"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 04 Jul 2023 22:09:57 GMT"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=60"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												}
+											],
+											"cookie": [],
+											"body": "[\n    {\n        \"id\": 1,\n        \"slug\": \"kl\",\n        \"name\": \"ahmad\",\n        \"reference\": \"jj\",\n        \"price\": 12,\n        \"vat\": 352,\n        \"stockable\": true\n    }\n]"
 										}
 									]
 								},
@@ -2785,11 +2859,16 @@
 											{
 												"key": "Accept",
 												"value": "*/*"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaG1hZEAxIiwiaWF0IjoxNjg4NTA4MDU4LCJleHAiOjE2ODkxMTI4NTh9.b7WclsCEF2DzXqLjXFY2bbUcAb_w5BtfPFFaZvcE08RUD-vrjdL7fYOTdjC4vZlf3gx61PmiVEIfKOA6E4cmDg",
+												"type": "text"
 											}
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"price\": \"<number>\",\n  \"reference\": \"<string>\",\n  \"slug\": \"<string>\",\n  \"stockable\": \"<boolean>\",\n  \"vat\": \"<number>\"\n}",
+											"raw": "{\n  \"name\": \"pc\",\n  \"price\": \"1000\",\n  \"reference\": \"gg\",\n  \"slug\": \"rlk\",\n  \"stockable\": true,\n  \"vat\": \"344\"\n}",
 											"options": {
 												"raw": {
 													"headerFamily": "json",
@@ -5597,6 +5676,101 @@
 													"header": [],
 													"cookie": [],
 													"body": ""
+												},
+												{
+													"name": "updateCustomer",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "*/*"
+															},
+															{
+																"key": "Authorization",
+																"value": "",
+																"type": "text",
+																"disabled": true
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"firstName\": \"hosam\",\n\n\n\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/customers/1",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"customers",
+																"1"
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Tue, 04 Jul 2023 22:08:36 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"timestamp\": \"2023-07-04T22:08:36.358+00:00\",\n    \"status\": 401,\n    \"error\": \"Unauthorized\",\n    \"message\": \"Full authentication is required to access this resource\",\n    \"path\": \"/api/v1/customers/1\"\n}"
 												}
 											]
 										},
@@ -5877,70 +6051,17 @@
 											"header": [],
 											"cookie": [],
 											"body": ""
-										}
-									]
-								},
-								{
-									"name": "createCustomer",
-									"request": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											},
-											{
-												"key": "Accept",
-												"value": "*/*"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n  \"bornAt\": \"<date>\",\n  \"firstName\": \"<string>\",\n  \"id\": \"<integer>\",\n  \"lastName\": \"<string>\"\n}",
-											"options": {
-												"raw": {
-													"headerFamily": "json",
-													"language": "json"
-												}
-											}
 										},
-										"url": {
-											"raw": "{{baseUrl}}/api/v1/customers",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"api",
-												"v1",
-												"customers"
-											]
-										}
-									},
-									"response": [
 										{
-											"name": "OK",
+											"name": "getAllCustomers",
 											"originalRequest": {
-												"method": "POST",
+												"method": "GET",
 												"header": [
-													{
-														"key": "Content-Type",
-														"value": "application/json"
-													},
 													{
 														"key": "Accept",
 														"value": "*/*"
 													}
 												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n  \"bornAt\": \"<date>\",\n  \"firstName\": \"<string>\",\n  \"id\": \"<integer>\",\n  \"lastName\": \"<string>\"\n}",
-													"options": {
-														"raw": {
-															"headerFamily": "json",
-															"language": "json"
-														}
-													}
-												},
 												"url": {
 													"raw": "{{baseUrl}}/api/v1/customers",
 													"host": [
@@ -5955,171 +6076,55 @@
 											},
 											"status": "OK",
 											"code": 200,
-											"_postman_previewlanguage": "text",
+											"_postman_previewlanguage": "json",
 											"header": [
 												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-XSS-Protection",
+													"value": "1; mode=block"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "no-cache, no-store, max-age=0, must-revalidate"
+												},
+												{
+													"key": "Pragma",
+													"value": "no-cache"
+												},
+												{
+													"key": "Expires",
+													"value": "0"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "DENY"
+												},
+												{
 													"key": "Content-Type",
-													"value": "*/*"
+													"value": "application/json"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Date",
+													"value": "Tue, 04 Jul 2023 22:01:21 GMT"
+												},
+												{
+													"key": "Keep-Alive",
+													"value": "timeout=60"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
 												}
 											],
 											"cookie": [],
-											"body": "{\n  \"bornAt\": \"<date>\",\n  \"firstName\": \"<string>\",\n  \"id\": \"<integer>\",\n  \"lastName\": \"<string>\"\n}"
-										},
-										{
-											"name": "Created",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"value": "application/json"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n  \"bornAt\": \"<date>\",\n  \"firstName\": \"<string>\",\n  \"id\": \"<integer>\",\n  \"lastName\": \"<string>\"\n}",
-													"options": {
-														"raw": {
-															"headerFamily": "json",
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{baseUrl}}/api/v1/customers",
-													"host": [
-														"{{baseUrl}}"
-													],
-													"path": [
-														"api",
-														"v1",
-														"customers"
-													]
-												}
-											},
-											"status": "Created",
-											"code": 201,
-											"_postman_previewlanguage": "text",
-											"header": [],
-											"cookie": [],
-											"body": ""
-										},
-										{
-											"name": "Unauthorized",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"value": "application/json"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n  \"bornAt\": \"<date>\",\n  \"firstName\": \"<string>\",\n  \"id\": \"<integer>\",\n  \"lastName\": \"<string>\"\n}",
-													"options": {
-														"raw": {
-															"headerFamily": "json",
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{baseUrl}}/api/v1/customers",
-													"host": [
-														"{{baseUrl}}"
-													],
-													"path": [
-														"api",
-														"v1",
-														"customers"
-													]
-												}
-											},
-											"status": "Unauthorized",
-											"code": 401,
-											"_postman_previewlanguage": "text",
-											"header": [],
-											"cookie": [],
-											"body": ""
-										},
-										{
-											"name": "Forbidden",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"value": "application/json"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n  \"bornAt\": \"<date>\",\n  \"firstName\": \"<string>\",\n  \"id\": \"<integer>\",\n  \"lastName\": \"<string>\"\n}",
-													"options": {
-														"raw": {
-															"headerFamily": "json",
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{baseUrl}}/api/v1/customers",
-													"host": [
-														"{{baseUrl}}"
-													],
-													"path": [
-														"api",
-														"v1",
-														"customers"
-													]
-												}
-											},
-											"status": "Forbidden",
-											"code": 403,
-											"_postman_previewlanguage": "text",
-											"header": [],
-											"cookie": [],
-											"body": ""
-										},
-										{
-											"name": "Not Found",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"value": "application/json"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n  \"bornAt\": \"<date>\",\n  \"firstName\": \"<string>\",\n  \"id\": \"<integer>\",\n  \"lastName\": \"<string>\"\n}",
-													"options": {
-														"raw": {
-															"headerFamily": "json",
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{baseUrl}}/api/v1/customers",
-													"host": [
-														"{{baseUrl}}"
-													],
-													"path": [
-														"api",
-														"v1",
-														"customers"
-													]
-												}
-											},
-											"status": "Not Found",
-											"code": 404,
-											"_postman_previewlanguage": "text",
-											"header": [],
-											"cookie": [],
-											"body": ""
+											"body": "[\n    {\n        \"id\": 1,\n        \"firstName\": \"ahmad\",\n        \"lastName\": \"luay\",\n        \"bornAt\": \"1990-01-01\"\n    }\n]"
 										}
 									]
 								}
@@ -6377,6 +6382,95 @@
 													"header": [],
 													"cookie": [],
 													"body": ""
+												},
+												{
+													"name": "REST API to Signin or Login user to Blog app",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "*/*"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"password\": \"123456\",\n  \"username\": \"ahmad@1\",\n  \"bornAt\": \"1990-01-01\",\n  \"firstName\": \"ahmad\",\n  \"isadmin\": false,\n  \"lastName\": \"luay\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/auth/signup",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"auth",
+																"signup"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "plain",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "text/plain;charset=UTF-8"
+														},
+														{
+															"key": "Content-Length",
+															"value": "28"
+														},
+														{
+															"key": "Date",
+															"value": "Tue, 04 Jul 2023 22:00:03 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "User registered successfully"
 												}
 											]
 										}
@@ -6401,7 +6495,7 @@
 												],
 												"body": {
 													"mode": "raw",
-													"raw": "{\n  \"password\": \"<string>\",\n  \"username\": \"<string>\"\n}",
+													"raw": "{\n  \"password\": \"123456\",\n  \"username\": \"ahmad@1\"\n}",
 													"options": {
 														"raw": {
 															"headerFamily": "json",
@@ -6631,6 +6725,95 @@
 													"header": [],
 													"cookie": [],
 													"body": ""
+												},
+												{
+													"name": "REST API to Register or Signup user to Blog app",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"key": "Accept",
+																"value": "*/*"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"password\": \"123456\",\n  \"username\": \"ahmad@1\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/api/v1/auth/signin",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"v1",
+																"auth",
+																"signin"
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "X-Content-Type-Options",
+															"value": "nosniff"
+														},
+														{
+															"key": "X-XSS-Protection",
+															"value": "1; mode=block"
+														},
+														{
+															"key": "Cache-Control",
+															"value": "no-cache, no-store, max-age=0, must-revalidate"
+														},
+														{
+															"key": "Pragma",
+															"value": "no-cache"
+														},
+														{
+															"key": "Expires",
+															"value": "0"
+														},
+														{
+															"key": "X-Frame-Options",
+															"value": "DENY"
+														},
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														},
+														{
+															"key": "Transfer-Encoding",
+															"value": "chunked"
+														},
+														{
+															"key": "Date",
+															"value": "Tue, 04 Jul 2023 22:00:58 GMT"
+														},
+														{
+															"key": "Keep-Alive",
+															"value": "timeout=60"
+														},
+														{
+															"key": "Connection",
+															"value": "keep-alive"
+														}
+													],
+													"cookie": [],
+													"body": "{\n    \"accessToken\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhaG1hZEAxIiwiaWF0IjoxNjg4NTA4MDU4LCJleHAiOjE2ODkxMTI4NTh9.b7WclsCEF2DzXqLjXFY2bbUcAb_w5BtfPFFaZvcE08RUD-vrjdL7fYOTdjC4vZlf3gx61PmiVEIfKOA6E4cmDg\",\n    \"tokenType\": \"Bearer\"\n}"
 												}
 											]
 										}

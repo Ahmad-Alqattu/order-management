@@ -4,6 +4,7 @@ import org.example.payload.StockDto;
 import org.example.entity.Stock;
 import org.example.exception.ResourceNotFoundException;
 import org.example.repository.StockRepository;
+import org.example.repository.UserRepository;
 import org.example.service.StockService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,11 +67,13 @@ public class StockServiceImpl implements StockService {
     @Override
     public void deleteStock(Integer stockId) {
         Stock stock = getStockByIdFromRepository(stockId);
+
         stockRepository.delete(stock);
     }
 
     private Stock getStockByIdFromRepository(Integer stockId) {
         return stockRepository.findById(stockId)
+
                 .orElseThrow(() -> new ResourceNotFoundException("Stock", "id", stockId));
     }
 }

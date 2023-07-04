@@ -2,6 +2,7 @@ package org.example.controller;
 
 import org.example.payload.CustomerDto;
 import org.example.service.CustomerService;
+import org.example.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -44,17 +45,6 @@ public class CustomerController {
         return ResponseEntity.ok(customer);
     }
 
-    /**
-     * Creates a new customer.
-     *
-     * @param customerDto Customer DTO
-     * @return Created customer DTO
-     */
-    @PostMapping
-    public ResponseEntity<CustomerDto> createCustomer(@Valid @RequestBody CustomerDto customerDto) {
-        CustomerDto createdCustomer = customerService.createCustomer(customerDto);
-        return ResponseEntity.status(HttpStatus.CREATED).body(createdCustomer);
-    }
 
     /**
      * Updates an existing customer.

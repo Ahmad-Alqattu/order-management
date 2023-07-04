@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.Digits;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
@@ -28,10 +29,14 @@ public class ProductOrderDto {
     @ApiModelProperty(value = "Product Order Price")
     @NotNull(message = "Price should not be null")
     @DecimalMin(value = "0.0", inclusive = false, message = "Price should be greater than 0")
+    @Digits(integer = 10, fraction = 2, message = "Price must have 10 digits in total and 2 decimal places")
+
     private BigDecimal price;
 
     @ApiModelProperty(value = "Product Order VAT")
     @NotNull(message = "VAT should not be null")
     @DecimalMin(value = "0.0", inclusive = false, message = "VAT should be greater than 0")
+    @Digits(integer = 10, fraction = 2, message = "Price must have 10 digits in total and 2 decimal places")
+
     private BigDecimal vat;
 }

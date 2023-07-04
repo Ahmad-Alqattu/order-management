@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import org.example.entity.Customer;
 import org.example.entity.Role;
 import org.example.entity.User;
 import org.example.payload.JWTAuthResponse;
@@ -7,11 +8,12 @@ import org.example.payload.LoginDto;
 import org.example.payload.SignUpDto;
 import org.example.repository.RoleRepository;
 import org.example.repository.UserRepository;
+import org.example.repository.CustomerRepository;
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
+
 import org.example.security.JwtTokenProvider;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -36,15 +38,18 @@ public class AuthController {
     private final UserRepository userRepository;
 
     private final RoleRepository roleRepository;
+    private final CustomerRepository customerRepository;
+
 
     private final PasswordEncoder passwordEncoder;
 
     private final JwtTokenProvider tokenProvider;
 
-    public AuthController(AuthenticationManager authenticationManager, UserRepository userRepository, RoleRepository roleRepository, PasswordEncoder passwordEncoder, JwtTokenProvider tokenProvider) {
+    public AuthController(AuthenticationManager authenticationManager, UserRepository userRepository, RoleRepository roleRepository, CustomerRepository customerRepository, PasswordEncoder passwordEncoder, JwtTokenProvider tokenProvider) {
         this.authenticationManager = authenticationManager;
         this.userRepository = userRepository;
         this.roleRepository = roleRepository;
+        this.customerRepository = customerRepository;
         this.passwordEncoder = passwordEncoder;
         this.tokenProvider = tokenProvider;
     }
@@ -88,7 +93,16 @@ public class AuthController {
         }else {
             Role roles = roleRepository.findByName("ROLE_CUSTOMER").get();
             user.setRoles(Collections.singleton(roles));
+            Customer customer = new Customer();
+            customer.setUsername(signUpDto.getUsername());
+            customer.setFirstName(signUpDto.getFirstName());
+            customer.setLastName(signUpDto.getLastName());
+            customer.setBornAt(signUpDto.getBornAt());
+            customerRepository.save(customer);
+
         }
+
+
         userRepository.save(user);
 
         return new ResponseEntity<>("User registered successfully",
