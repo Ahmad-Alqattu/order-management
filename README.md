@@ -62,7 +62,6 @@ Once the image is built successfully, you can run the Docker container using the
 
 ```bash
 docker run -p 8080:8080 order-management java -jar order-management.jar
-
 ```
 This command starts a container from the "order-management" image and maps port 8080 of the container to port 8080 of the host machine.<br>
 
