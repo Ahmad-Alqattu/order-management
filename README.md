@@ -27,9 +27,9 @@ Open a terminal within IntelliJ IDEA and run the following command to build the 
 mvn clean package
 This will compile the source code, run tests, and package the application into a JAR file.
 
-Running the Application
-You can run the application directly using Maven:
-<br>
+Running the Application<br>
+You can run the application directly using Maven:<br>
+
 mvn spring-boot:run<br>
 Alternatively, you can run the JAR file:<br>
 
@@ -61,7 +61,8 @@ Running the Docker Container<br>
 Once the image is built successfully, you can run the Docker container using the following command:<br>
 
 ```bash
-docker run -p 8080:8080 order-management
+docker run -p 8080:8080 order-management java -jar order-management.jar
+
 ```
 This command starts a container from the "order-management" image and maps port 8080 of the container to port 8080 of the host machine.<br>
 
